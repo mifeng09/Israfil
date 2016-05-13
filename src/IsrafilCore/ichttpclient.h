@@ -8,23 +8,30 @@
 //#include <QtNetwork/QNetworkCookieJar>
 //#include <QSettings>
 ///Debug
+#ifndef QT_NO_DEBUG
 #include <QDebug>
+#endif
 
 //#include "singleton.h"
 
 typedef QMap<QByteArray, QByteArray> icHeaders; // Http Header structure
 
 //class icCookieJar;
-class icHttpClient
+class icHttpClient : public QObject
 {
+    Q_OBJECT
 public:
-    icHttpClient();
-    void setUserAgent(QString);
-    void setHeader(icHeaders);
-    void updateHeader();
+    explicit icHttpClient(QObject *parent = 0);
+
+    //icHttpClient();
     QByteArray HttpGet(QUrl);
     QByteArray HttpPost(QUrl, QString);
     icHeaders getHeader();
+//protected:
+    virtual void initich() = 0;
+    void setUserAgent(QString);
+    void setHeader(icHeaders);
+    void updateHeader();
 private:
     QNetworkAccessManager *httpClient;
     QNetworkRequest *request;

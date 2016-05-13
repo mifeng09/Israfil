@@ -1,6 +1,7 @@
 #include "ichttpclient.h"
 
-icHttpClient::icHttpClient()
+icHttpClient::icHttpClient(QObject *parent) :
+    QObject(parent)
 {
     httpClient = new QNetworkAccessManager();
     request = new QNetworkRequest();
@@ -11,7 +12,7 @@ icHttpClient::icHttpClient()
 void icHttpClient::updateHeader()
 {
     for (auto it = HttpHeader.begin(); it != HttpHeader.end(); it++){ //icHeaders::iterator it;
-        qDebug() << "iterator";
+        //qDebug() << "iterator";
         request->setRawHeader(it.key().data(), it.value().data());
     }
     //qDebug() << "iterator finished";
@@ -37,7 +38,9 @@ QByteArray icHttpClient::HttpGet(QUrl getURL)
 {
     request->setUrl(getURL);
     reply = httpClient->get(*request);
+#ifndef QT_NO_DEBUG
     qDebug() << reply->readAll() << endl << "End.";
+#endif
     return reply->readAll();
 }
 
@@ -45,8 +48,8 @@ QByteArray icHttpClient::HttpPost(QUrl posturl, QString str)
 {
     //TODO:
     /// Avoid Warning
-    posturl = posturl;
-    str = str;
+    //posturl = posturl;
+    //str = str;
     ///
     request->setUrl(posturl);
     reply = httpClient->post(*request, str.toUtf8());

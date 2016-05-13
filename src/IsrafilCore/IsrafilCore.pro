@@ -14,9 +14,13 @@ HEADERS += backendmodel.h \
     pluginloader.h \
     ichttpclient.h \
     israfilcore.h \
-    singleton.h
+    singleton.h \
+    Netease/nebase.h \
+    Netease/nehttpclient.h
 SOURCES += backendmodel.cpp \
     pluginmgr.cpp \
     pluginloader.cpp \
     ichttpclient.cpp \
-    israfilcore.cpp
+    israfilcore.cpp \
+    Netease/nebase.cpp \
+    Netease/nehttpclient.cpp
