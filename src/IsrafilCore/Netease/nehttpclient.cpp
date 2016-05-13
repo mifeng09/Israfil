@@ -1,7 +1,6 @@
 #include "nehttpclient.h"
 
-NEHttpClient::NEHttpClient(QObject *parent) :
-    icHttpClient(parent)
+NEHttpClient::NEHttpClient()
 {
 
 }

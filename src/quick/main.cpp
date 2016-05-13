@@ -19,17 +19,17 @@ int main(int argc, char *argv[])
     //QQmlApplicationEngine engine;
 
     //QStringList plugins;
-    IsrafilCore *pIC = new IsrafilCore();
+    //IsrafilCore *pIC = new IsrafilCore();
     //PluginMgr plmgr;
-    pIC->plmgr->LoadAllPlugins();
-    pIC->plmgr->PassCoreToAllPlugins(pIC);
+    //pIC->plmgr->LoadAllPlugins();
+    //pIC->plmgr->PassCoreToAllPlugins(pIC);
     //foreach (PluginInterface *plugin, PluginLoader::plugins())
     //    plugins += plugin->title();
     //engine.rootContext()->setContextProperty("plugins", plmgr.GetPluginList());
-    qDebug() << pIC->plmgr->GetPluginList();
-    SongList *tmpSL = new SongList();
-    tmpSL = pIC->SearchByName("test");
-    qDebug() << tmpSL->at(0).UID <<endl;
+    //qDebug() << pIC->plmgr->GetPluginList();
+    //SongList *tmpSL = new SongList();
+    //tmpSL = pIC->SearchByName("test");
+    //qDebug() << tmpSL->at(0).UID <<endl;
     /// QML Import Path {
     /*
     engine.addImportPath("qrc:/");

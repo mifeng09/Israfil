@@ -1,6 +1,6 @@
 TEMPLATE = subdirs
 SUBDIRS += example \
-    icpNetease \
+    #icpNetease \
     icpGoCore
 
 # File name should begin with icp, e.g. icpNetease

@@ -65,13 +65,14 @@ See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contrib
 (CI脚本待修复)  
 
 ## Copyright
-| 3rd party            | License | Sub-Project | in source            |
-| :---:                | :---:   | :---:       | :---:                |
-| natefinch/pie        | MIT     | HttpAPI     | Embedded in source   |
-| ddliu/go-httpclient  | MIT     | HttpAPI     | in Vendor            |
-| papyros/qml-material | LGPL2   | IsrafilApp  | Embedded in source   |
-| fengleyl/NetEase     | MIT     | IsrafilApp  | Uses Part of Code    |
-| Qt Project           | LGPL2   | IsrafilApp  | Universal Dependency |
+| 3rd party              | License | Sub-Project | in source            |
+| :---:                  | :---:   | :---:       | :---:                |
+| natefinch/pie          | MIT     | HttpAPI     | Embedded in source   |
+| ddliu/go-httpclient    | MIT     | HttpAPI     | Need manual go get   |
+| papyros/qml-material   | LGPL2   | IsrafilApp  | Embedded in source   |
+| fengleyl/NetEase       | MIT     | IsrafilApp  | Uses Part of Code    |
+| Qt Project             | LGPL2   | IsrafilApp  | Universal Dependency |
+| bidstack/bidstack-http | UNKNOWN | IsrafilApp  | Embedded in source   |
 
 网易云音乐API参考了[网易云音乐API分析](https://github.com/yanunon/NeteaseCloudMusic/wiki/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90API%E5%88%86%E6%9E%90)
 网易云音乐新版API正在学习中...  

@@ -1,12 +1,11 @@
 #ifndef NEHTTPCLIENT_H
 #define NEHTTPCLIENT_H
-#include "../ichttpclient.h"
+//#include "../ichttpclient-old.h"
 
-class NEHttpClient : public icHttpClient
+class NEHttpClient
 {
-    Q_OBJECT
 public:
-    NEHttpClient(QObject *parent = 0);
+    NEHttpClient();
 protected:
     void initich();
 

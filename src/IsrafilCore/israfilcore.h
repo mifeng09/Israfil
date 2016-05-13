@@ -5,7 +5,7 @@
 #include "plugin.h"
 #include "pluginmgr.h"
 #include "songbase.h"
-#include "ichttpclient.h"
+//#include "ichttpclient-old.h"
 
 class IsrafilCore: public QObject
 {
