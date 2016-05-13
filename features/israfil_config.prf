@@ -1,0 +1,22 @@
+load(israfil_installs.prf)
+load(israfil_functions.prf)
+
+!verbose:CONFIG += silent
+# Cheers, Modern C++
+CONFIG += C++11
+
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = debug
+    MOC_DIR = debug
+    RCC_DIR = debug
+    UI_DIR = debug
+} else {
+    OBJECTS_DIR = release
+    MOC_DIR = release
+    RCC_DIR = release
+    UI_DIR = release
+}
+
+DEFINES += ISRAFIL_INSTALL_BINS=\\\"$$ISRAFIL_INSTALL_BINS\\\"
+DEFINES += ISRAFIL_INSTALL_LIBS=\\\"$$ISRAFIL_INSTALL_LIBS\\\"
+DEFINES += ISRAFIL_INSTALL_PLUGINS=\\\"$$ISRAFIL_INSTALL_PLUGINS\\\"

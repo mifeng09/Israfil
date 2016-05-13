@@ -1,0 +1,10 @@
+*.exe
+build*/
+*.user
+*.exe
+/icpNetease
+/icpQQMusic
+/icpXiami
+/core
+build/
+glide.lock
