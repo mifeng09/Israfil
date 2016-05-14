@@ -24,7 +24,7 @@ struct SongBase
 protected:*/
     QString UID; // Universal Song ID
     QString Name; // Name of the Song
-    qint64 ID; // ID of the specific Source
+    QString ID; // ID of the specific Source
     qint8 Source; // Source: Netease, QQ, etc.
     QString URL; // Where User can find this song.
     QStringList SongDldURL; // The absolute URL of the song with different bitrates

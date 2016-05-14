@@ -6,9 +6,15 @@ namespace Netease{
 const QString magicKey = "3go8&$8*3*3h0k(2)2";
 const QString NEBaseURL = "http://music.163.com";
 const QString NEAPIBase = NEBaseURL + "/api";
+const QString NEWeAPIBase = NEBaseURL + "/weapi";
+const QString NESearchURL = NEAPIBase + "/search/get";
 const QString NESongInfo = NEAPIBase + "/song/detail?ids=[%d]";
+const QString NELoginURL = NEWeAPIBase + "/login";
+const QString NECellLoginURL = NEWeAPIBase + "/login/cellphone";
 const QString NESongCDN = "http://m%d.music.126.net/%s/%d.mp3";
+const QString NESongNewCDN = NEWeAPIBase + "/song/enhance/player/url?csrf_token=";
 const QString NESongURL = NEBase + "/#/song?id=%d"; // web url
+
 const int NERetOK = 200;
 const bool DEBUG = 0;
 

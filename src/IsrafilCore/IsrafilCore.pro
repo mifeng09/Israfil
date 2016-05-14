@@ -14,17 +14,17 @@ HEADERS += backendmodel.h \
     pluginloader.h \
     israfilcore.h \
     Netease/nebase.h \
-    Netease/nehttpclient.h \
     icHttpClient/httpbody.hpp \
     icHttpClient/httpclient.hpp \
     icHttpClient/httprequest.hpp \
-    icHttpClient/httpresponse.hpp
+    icHttpClient/httpresponse.hpp \
+    Netease/neteaseapi.h
 SOURCES += backendmodel.cpp \
     pluginmgr.cpp \
     pluginloader.cpp \
     israfilcore.cpp \
-    Netease/nehttpclient.cpp \
     icHttpClient/httpbody.cpp \
     icHttpClient/httpclient.cpp \
     icHttpClient/httprequest.cpp \
-    icHttpClient/httpresponse.cpp
+    icHttpClient/httpresponse.cpp \
+    Netease/neteaseapi.cpp
