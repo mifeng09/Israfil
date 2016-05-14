@@ -23,7 +23,6 @@ SOURCES += backendmodel.cpp \
     pluginmgr.cpp \
     pluginloader.cpp \
     israfilcore.cpp \
-    Netease/nebase.cpp \
     Netease/nehttpclient.cpp \
     icHttpClient/httpbody.cpp \
     icHttpClient/httpclient.cpp \
